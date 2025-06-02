@@ -1,7 +1,11 @@
 import React from 'react';
 
-export class App extends React.PureComponent {
-  state = {
+type State = {
+  title: string;
+};
+
+export class App extends React.PureComponent<State> {
+  state: State = {
     title: `Nothing was pressed yet`,
   };
 
