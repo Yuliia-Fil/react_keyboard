@@ -4,7 +4,7 @@ type State = {
   title: string;
 };
 
-export class App extends React.PureComponent<State> {
+export class App extends React.PureComponent<{}, State> {
   state: State = {
     title: `Nothing was pressed yet`,
   };
